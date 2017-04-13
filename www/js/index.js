@@ -34,8 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-
-        document.body.style.marginTop = "20px";
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
