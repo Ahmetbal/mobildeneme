@@ -10,7 +10,7 @@
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="false" />
     <preference name="android-minSdkVersion" value="14" />
-    <preference name="phonegap-version"       value="cli-5.2.0" />
+    <preference name="phonegap-version"       value="3.7.0" />
     <preference name="StatusBarOverlaysWebView" value="false" />
     <preference name="StatusBarBackgroundColor" value="#165769" /> <!--Your color value will go here-->
     <preference name="StatusBarStyle" value="lightcontent" />
@@ -36,7 +36,7 @@
 
     <gap:plugin name="com.phonegap.plugin.statusbar" />
 
-    
+
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="www/res/icon/android/drawable-mdpi-icon.png" />
