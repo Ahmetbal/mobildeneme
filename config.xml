@@ -1,11 +1,20 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>helloworld</name>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.infopark.uedasonlineabonelik"
+        version   = "1.0.6">
+
+    <name>Limak Enerji Uludağ Elektrik Mobil İşlemler</name>
+
+
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Online Abonelik, Borç Sorgulama, Fatura Ödeme, Tüketim Sorgulama v.b. pek çok işlem
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+
+    <author href="http://www.infopark.com.tr" email="bilgi@infopark.com.tr">
+        Infopark
     </author>
     <content src="index.html" />
     <preference name="DisallowOverscroll" value="true" />
@@ -106,6 +115,27 @@
         <icon height="360" platform="windows" src="www/res/icon/windows/Wide310x150Logo.scale-240.png" width="744" />
         <splash height="1920" platform="windows" src="www/res/screen/windows/SplashScreenPhone.scale-240.png" width="1152" />
     </platform>
+
+    <splash src="clk-uludag-logo-32.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+        <splash src="clk-uludag-logo-32.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+        <splash src="clk-uludag-logo-32.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+        <splash src="clk-uludag-logo-32.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+        <splash src="clk-uludag-logo-32.png"              gap:platform="blackberry" />
+        <splash src="clk-uludag-logo-32.png"         gap:platform="ios"      />
+        <splash src="clk-uludag-logo-32.png"      gap:platform="ios"      />
+        <splash src="clk-uludag-logo-32.png" gap:platform="ios"      />
+        <splash src="clk-uludag-logo-32.png"           gap:platform="ios"     />
+        <splash src="clk-uludag-logo-32.png"          gap:platform="ios"      />
+        <splash src="clk-uludag-logo-32.png"      gap:platform="winphone" />
+    	  <splash src="icon-568h@2x.png" gap:platform="ios" width="640" height="1136" />
+
+        <gap:config-file platform="ios" parent="CFBundleShortVersionString">
+        <string>106</string>
+        </gap:config-file>
+
+
+
+
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
