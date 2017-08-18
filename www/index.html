@@ -40,10 +40,13 @@
         }
         //return deviceWidth;
 
+
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+
         $(iframe).width(window.screen.width);
         $(iframe).height(window.screen.height);
 
-        alert(viewHeight.toString() + ' - ' + viewwidth.toString() + '-' + $(window).width().toString() + '-' + deviceWidth.toString());
+        alert(viewHeight.toString() + ' - ' + width.toString() + '-' + $(window).width().toString() + '-' + window.screen.availWidth.toString());
     }
 </script>
 
