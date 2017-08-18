@@ -29,8 +29,7 @@
 
     function autoResize(iframe) {
         //$(iframe).height($(iframe).contents().find('html').height());
-        $(iframe).width(viewwidth);
-        $(iframe).height(viewHeight);
+
         //$(iframe).attr('src', 'https://online.limakuludag.com.tr/'),
 
         var deviceWidth = window.orientation == 0 ? window.screen.width : window.screen.height;
@@ -40,6 +39,9 @@
             deviceWidth = deviceWidth / window.devicePixelRatio;
         }
         //return deviceWidth;
+
+        $(iframe).width(window.screen.width);
+        $(iframe).height(window.screen.height);
 
         alert(viewHeight.toString() + ' - ' + viewwidth.toString() + '-' + $(window).width().toString() + '-' + deviceWidth.toString());
     }
