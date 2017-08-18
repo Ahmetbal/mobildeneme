@@ -16,11 +16,21 @@
         height: $(window).height()
     };
 
+    var viewwidth;
+    var viewHeight;
+
+    if (typeof window.innerWidth != 'undefined') {
+        viewwidth = window.innerWidth;
+    }
+    if (typeof window.innerHeight != 'undefined') {
+        viewHeight = window.innerHeight;
+    }
+
 
     function autoResize(iframe) {
         //$(iframe).height($(iframe).contents().find('html').height());
-        $(iframe).width(viewport.width);
-        $(iframe).height(viewport.height);
+        $(iframe).width(viewwidth);
+        $(iframe).height(viewHeight);
         //$(iframe).attr('src', 'https://online.limakuludag.com.tr/')
     }
 </script>
