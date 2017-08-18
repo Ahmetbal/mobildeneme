@@ -43,8 +43,8 @@
 
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
 
-        $(iframe).width(window.screen.width);
-        $(iframe).height(window.screen.height);
+        $(iframe).width(window.screen.availWidth);
+        $(iframe).height(window.screen.availHeight);
 
         alert(viewHeight.toString() + ' - ' + width.toString() + '-' + $(window).width().toString() + '-' + window.screen.availWidth.toString());
     }
